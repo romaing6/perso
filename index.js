@@ -19,7 +19,7 @@ const source = new carto.source.SQL("SELECT A.*,B.status_group FROM pump_it_up_d
 const viz = new carto.Viz(`
     color: ramp($status_group, [#66cc85, #f67171, #f8c374])
     strokeWidth:0
-    width: ramp(zoomRange([10,15]),[1,scaled($population/2,15)])
+    width: sqrt(ramp(zoomRange([1,15]),[1,$population]))
 `);
 
 const layer = new carto.Layer('layer', source, viz);
