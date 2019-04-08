@@ -1,11 +1,30 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <!-- Include CARTO VL JS from the CARTO CDN-->
-  <script src="https://libs.cartocdn.com/carto-vl/v1.2.4/carto-vl.min.js"></script>
-
-  <!-- Include Mapbox GL from the Mapbox CDN-->
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Seminario - 07MBIG</title>
 </head>
 
+<body>
+  <p id ='top'><span>07MBIG - Visualización de datos</span><a href="https://js-ascbc6.stackblitz.io">https://js-ascbc6.stackblitz.io</a></p>
 
-<div id="map"></div>
+  <div class='title_intro'>Seminario: Problemas de abastecimiento de agua en Tanzania</div>
+  <p>
+    <span class="gauche">Master Big Data y Data Science</span>
+    <span class="droite">Curso 2018-2019 – Ed. octubre</span>Romain Gambini</p>
+  <div id='line'></div>
+  
+
+<h1>Introducción</h1>
+<span>Tanzania es un país donde el abastecimiento de agua es un problema de mucha envergadura. De hecho, más de la mitad de la población del país no tiene acceso a una agua potable de buena calidad y solo un tercio acceso a un sistema sanitario igualitario. Esto genera una crisis tanto sociologíca como política. Sin embargo, con el apoyo del gobierno y de algunas organizaciones, se ha desarrollado, a lo largo del tiempo, una red, más o menos eficiente, de puntos de abastecimiento de agua (pozos, fuentes, presas, etc.) para intentar mejorar el derecho de acceder a las necesidades vitales básicas de cualquier ser humano.<br> Además, a esa red "oficial" se ha añadido una parte "extraoficial" (sin autorización) que permite ampliar más el acceso al agua. <br><br>Intentaremos entender, en este trabajo, cuáles son los factores que influyen sobre el funcionamiento de estos puntos de abastecimiento, cómo está desarrollada esta red y que se podría hacer para mejorar el mantenimiento del abastecimiento de agua en Tanzania. Por ello, utilizaremos datos que provienen de la competición DrivenData "Pump it Up: Data Mining the Water Table" ( <a href="https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/">https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/</a>). Este fichero de datos se compone de 41 columnas explicativas y un poco menos de 60 000 registros (bombas de agua).</span>
+<h1>Primera parte: Visualizacion del abastecimiento</h1>
+<span>En una primera parte, visualizaremos, gracias a la herramienta de visualización de mapas Carto, la distribución de la red de abastecimiento a través el país. Para ello, utilizaremos las parejas de longitud/latitud de cada bombas de agua que apuntaremos en el mapa en forma de puntos. Además, el tamaño del punto refleja la población que depende de este bomba, más grande es más gente depende de él. Asimismo, al sobrepasar un punto, se visualizará informaciones relativas a la bomba (altitud, población, permiso, calidad del agua, tipo de pago).</span>
+
+
+<iframe style="margin-left:5%"width="90%" height="820" frameborder="0" src="https://romaing6.carto.com/builder/1b600b55-2d01-45c1-a5f5-93e7e7cac448/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
+<div class='tableauPlaceholder' id='viz1554717218480' style='position: relative; margin-left:5%'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Classeur1_15547165802320&#47;WaterpumpTanzaniaDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Classeur1_15547165802320&#47;WaterpumpTanzaniaDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Classeur1_15547165802320&#47;WaterpumpTanzaniaDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1554717218480');                    var vizElement = divElement.getElementsByTagName('object')[0];      vizElement.style.width='90%';     vizElement.style.height='1100px';                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</body>
+
+</html>

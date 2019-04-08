@@ -1,5 +1,40 @@
-#map {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+body{
+  font-family: 'Courier New', Courier, monospace
+}
+
+.title_intro {
+  color: #004D7F;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  
+}
+
+#top {
+  text-align: right;
+}
+
+#top span {
+  float: left;
+}
+
+
+p {
+  text-align: center;
+  color: #004D7F
+}
+p span.gauche {
+  float: left;
+}
+p span.droite {
+  float: right;
+}
+#line {
+  border-bottom: #004D7F 3px solid;
+  width:120%;
+  margin-left: -10px;
+  height: 100%;
+  margin-top: -10px
 }
