@@ -54,11 +54,17 @@
 
   <script type='text/javascript'>                   
     var divElement = document.getElementById('viz1554717218480');
-    var vizElement = divElement.getElementsByTagName('object')[0];      vizElement.style.width='90%';     
-    vizElement.style.height='1100px';                     
-    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    var vizElement = divElement.getElementsByTagName('object')[0];      
+    vizElement.style.width='90%';     
+    vizElement.style.height='900px';                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
 
-  <span>El primer gráfico no enseña las proporciones de los tres tipos de estado de funcionamiento de las bombas de agua según el tipo de fuente de agua. Podemos ver que las bombas manuales (<i>hand pump</i>) y los hidrantes simples (<i>communal standpipe</i>) son los tipos más representados y tienen aproximadamente la misma proporción en cuanto al estado de functionamiento. En cambio, los hidrantes multiples (<i>communal standpipe multiple</i>) y el grupo "otros" comparten unas proporciones similares, es decir, una cantidad de fuentes que no funcionan más importante que los que sí funcionan. Nos podríamos preguntar si estos tipos de instalaciones engendran unos fallos recurrentes. </span>
+  <span>El primer gráfico nos enseña las proporciones de los tres tipos de estado de funcionamiento de las bombas de agua según el tipo de fuente de agua. Podemos ver que las bombas manuales (<i>hand pump</i>) y los hidrantes simples (<i>communal standpipe</i>) son los tipos más representados y tienen aproximadamente la misma proporción en cuanto al estado de functionamiento. En cambio, los hidrantes multiples (<i>communal standpipe multiple</i>) y el grupo "otros" comparten unas proporciones similares, es decir, una cantidad de fuentes que no funcionan más importante que los que sí funcionan. Nos podríamos preguntar si estos tipos de instalaciones engendran fallos recurrentes.<br>
+  El segundo gráfico nos permite apreciar la cantidad de fuentes de agua que tuvieron un permiso antes de ser construidas. También, podemos medir las proporciones del estado de funcionamiento de las bombas y compararlas entre ellas. Vemos aquí, que a priori el estado de funcionamiento no está correlacionado con la obtención de un permiso de construcción ya que la proporciones en los tres grupos (sin permiso, con permiso, sin información) son similares.<br>
+  El penúltimo gráfico nos muestra la potencial relación entre el año de construcción y el estado de funcionamiento. Lo que observamos es que la proporción de fuentes en estado de funcionamiento es mucho más grande a partir de los años 2000, pero se puede explicar por el hecho de que la mayoría de las bombas fueron construidas durante estos años. Ahora, si comparamos la cantidad de los dos tipos de estado que nos interesan (funcional y no funcional), vemos que antes del año 1990 la proporción de fuentes no funcionales es mucho más importante que la de las funcionales. Parece lógico ya que el tiempo tiene un efecto de deterioración universal. Pero, ya que las informaciones obtenidas gracias a este gráficos parecen lógicas, no podemos tenerlas en cuenta a la hora de sacar conclusiones sobre el tema ya que solo un 10% de las fuentes están representadas en el gráfico. El 90% restante no tenía valor de año de construcción.<br>
+  Finalmente, en el cuarto y último gráfico nos expone la posible relación entre el tipo de pago de la fuente (pago al cubo, pago al mes, pago anual, etc.) y el estado de funcionamiento de las fuentes de agua. Vemos que el hecho de que no se pague el agua influye muchísimo sobre la deterioración de las bombas y su funcionamiento en general. Al contrario, el hecho de que se pague anualmente (de que se pague en general) el agua de una fuente influye positivamente sobre su estado de funcionamiento. </span>
 </body>
 </html>
