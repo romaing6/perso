@@ -36,5 +36,10 @@ p span.droite {
   width:120%;
   margin-left: -10px;
   height: 100%;
-  margin-top: -10px
+  margin-top: -10px;
+}
+
+
+#viz-client-container {
+  width: 110%
 }
