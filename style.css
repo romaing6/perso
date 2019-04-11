@@ -5,23 +5,28 @@ body{
   
 }
 #grand_container {
-  background-color: rgba(0, 76, 127, 0.05);
+  background-color: rgba(141, 106, 60, 0.1);
   border-radius: 7px;
   padding: 1% 5%;
   margin: 0 5%;
 }
+
 #little_container {
-  background-color: red;
-  margin-top: -5px
+  background-image: url(https://water.org/media/images/Waterorg_Resources_Header.original.jpg);
+  background-size: cover;
+  background-origin:  border-box;
+  background-position: bottom;
+  margin: -20px -10px 10px -10px;
+  padding: 1% 1% 0% 1%;
 }
 
 
 .title_intro {
-  color: #004D7F;
+  color: #ffffff ;
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   font-size: 30px;
   
 }
@@ -37,7 +42,8 @@ body{
 
 p {
   text-align: center;
-  color: #004D7F
+  color: white;
+  font-weight: bold;
 }
 p span.gauche {
   float: left;
@@ -46,7 +52,7 @@ p span.droite {
   float: right;
 }
 #line {
-  border-bottom: #004D7F 3px solid;
+  border-bottom: rgb(141, 106, 60) 4px solid;
   width:120%;
   margin-left: -10%;
   height: 100%;
