@@ -6,15 +6,18 @@
 </head>
 
 <body>
+  <div id="little_container">
   <p id ='top'><span>07MBIG - Visualización de datos</span><a href="https://js-ascbc6.stackblitz.io" style="text-decoration: none; color:#004D7F">https://js-ascbc6.stackblitz.io</a></p>
 
-  <div class='title_intro'>Seminario: Problemas de abastecimiento de agua en Tanzania</div>
-  <p>
-    <span class="gauche">Master Big Data y Data Science</span>
-    <span class="droite">Curso 2018-2019 – Ed. octubre</span>Romain Gambini</p>
-  <div id='line'></div>
+    <div class='title_intro'>Seminario: Problemas de abastecimiento de agua en Tanzania</div>
+    <p>
+      <span class="gauche">Master Big Data y Data Science</span>
+      <span class="droite">Curso 2018-2019 – Ed. octubre</span>Romain Gambini</p>
+    <div id='line'></div>
+  </div>
   
-
+  
+  <div id="grand_container">
   <h1>Introducción</h1>
   <span>Tanzania es un país donde el abastecimiento de agua es un problema de mucha envergadura. De hecho, más de la mitad de la población del país no tiene acceso a una agua potable de buena calidad y solo un tercio tiene acceso a un sistema sanitario igualitario. Esto genera una crisis tanto sociologíca como política. Sin embargo, con el apoyo del gobierno y de algunas organizaciones, se ha desarrollado, a lo largo del tiempo, una red de puntos de abastecimiento de agua más o menos eficiente (pozos, fuentes, presas, etc.) para intentar mejorar el derecho al acceso a las necesidades vitales básicas de cualquier ser humano.<br> Además, a esa red "oficial" se ha añadido una parte "extraoficial" (sin autorización) que permite ampliar más el acceso al agua. <br><br>Intentaremos entender, en este trabajo, cuáles son los factores que influyen sobre el funcionamiento de estos puntos de abastecimiento, cómo está desarrollada esta red y qué se podría hacer para mejorar el mantenimiento del abastecimiento de agua en Tanzania. Para ello, utilizaremos datos que provienen de la competición DrivenData "Pump it Up: Data Mining the Water Table" (<a href="https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/" style="color:black">https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/</a>). Este fichero de datos se compone de 41 columnas explicativas y de un poco menos de 60 000 registros (bombas de agua). Este trabajo persigue el objetivo de ayudar a las organizaciones a mejorar la calidad de vida de los tanzanos tras la visualización de los problemas del abastecimiento de agua en Tanzania. </span>
 
@@ -66,5 +69,9 @@
   El segundo gráfico nos permite apreciar la cantidad de fuentes de agua que tuvieron un permiso antes de ser construidas. También, podemos medir las proporciones del funcionamiento de las bombas y compararlas entre ellas. Vemos aquí que, a priori el funcionamiento no está correlacionado con la obtención de un permiso de construcción, ya que la proporciones en los tres grupos (sin permiso, con permiso, sin información) son similares.<br>
   El penúltimo gráfico nos muestra la potencial relación entre el año de construcción y el estado de funcionamiento. Lo que observamos es que la proporción de fuentes en funcionales se incrementa a partir de los años 2000, lo que se puede explicar con el hecho de que la mayoría de las bombas fueron construidas durante estos años. Ahora, si comparamos las cantidades de los dos estados que nos interesan (funcional y no funcional), vemos que antes del año 1990 la proporción de fuentes no funcionales es mucho más importante que la de las funcionales. Parece lógico, ya que el tiempo tiene un efecto de deterioración universal. Pero, aunque las informaciones obtenidas gracias a este gráfico parecen lógicas, no podemos tenerlas en cuenta a la hora de sacar conclusiones sobre el tema, ya que solo un 10% de las fuentes están representadas en dicho gráfico. El 90% restante no tenía el valor "año de construcción".<br>
   Finalmente, el cuarto y último gráfico nos expone la posible relación entre el tipo de pago de la fuente (pago al cubo, pago al mes, pago anual, etc.) y el estado de funcionamiento de las fuentes de agua. Vemos que, el hecho de que no se pague el agua, influye muchísimo sobre la deterioración de las bombas y su funcionamiento en general. Al contrario, el hecho de que el agua de una fuente se pague anualmente (o se pague en general), influye positivamente en su funcionamiento. </span>
+
+  <h1>Conclusión</h1>
+  <span>Por último, hemos visto que lo que más influye sobre el estado de funcionamiento de las fuentes de agua es el tipo de fuente y el tipo de pago. Entonces, si se tienen en cuenta estos factores para aumentar la eficacia de esta de red de abastecimiento, mejorará la calidad de vida de los tanzanos permitiéndoles satisfacer sus necesidades más básicas. </span>
+  </div>
 </body>
 </html>
